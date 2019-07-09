@@ -16,18 +16,21 @@ body {
     display: flex;
     position: relative;
     margin-left: 4px;
-
 }
 
 .white-key {
     width: 40px;
     height: 120px;
-    background-color: #fff;
+    background-color: #FFF;
     border: 4px solid black;
     border-radius: 0 0 6px 6px;
     margin-left: -4px;
     outline: none;
     cursor: pointer;
+}
+
+.white-key.active {
+    background-color: #C0C0C0;
 }
 
 .black-key {
@@ -40,3 +43,36 @@ body {
     outline: none;
     cursor: pointer;
 }
+
+.black-key.active {
+    background-image: linear-gradient(#000000, #101010);
+}
+
+.Db4-key {
+    left: 22px;
+}
+
+.Eb4-key {
+    left: 58px;
+}
+
+.Gb4-key {
+    left: 130px;
+}
+
+.Ab4-key {
+    left: 166px;
+}
+
+.Bb4-key {
+    left: 202px;
+}
+
+.Db5-key {
+    left: 274px;
+}
+
+.Eb5-key {
+    left: 310px;
+}
+
