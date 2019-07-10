@@ -16,3 +16,16 @@ const Db5 = new Audio("sounds/Db5.mp3");
 const D5 = new Audio("sounds/D5.mp3");
 const Eb5 = new Audio("sounds/Eb5.mp3");
 const E5 = new Audio("sounds/E5.mp3");
+
+
+const playSound = audio => {
+  const clone = audio.cloneNode();
+  clone.play();
+    setTimeout(() => (clone.volume = 0.8), 400);
+    setTimeout(() => (clone.volume = 0.6), 800);
+    setTimeout(() => (clone.volume = 0.4), 1200);
+    setTimeout(() => (clone.volume = 0.2), 1600);
+    setTimeout(() => (clone.volume = 0), 2000);
+};
+
+const C4Key = 
