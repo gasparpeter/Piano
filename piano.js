@@ -181,3 +181,39 @@ const playE5 = () => {
     setTimeout(() => E5Key.classList.remove("active"), 200);
 };
 E5Key.addEventListener("click", playE5);
+
+window.addEventListener("keydown", ({keyCode}) => {
+    if (keyCode === 81) return playC4();
+    
+    if (keyCode === 50) return playD4();
+    
+    if (keyCode === 87) return playD4();
+    
+    if (keyCode === 51) return playEb4();
+    
+    if (keyCode === 69) return playE4();
+    
+    if (keyCode === 82) return playF4();
+
+    if (keyCode === 53) return playGb4();
+
+    if (keyCode === 84) return playG4();
+
+    if (keyCode === 54) return playAb4();
+
+    if (keyCode === 89) return playA4();
+
+    if (keyCode === 55) return playBb4();
+
+    if (keyCode === 85) return playB4();
+
+    if (keyCode === 73) return playC5();
+
+    if (keyCode === 57) return playDb5();
+
+    if (keyCode === 79) return playD5();
+
+    if (keyCode === 48) return playEb5();
+    
+    if (keyCode === 80) return playE5();
+});
